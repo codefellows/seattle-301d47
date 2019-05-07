@@ -46,5 +46,8 @@ Dog.renderDogs = () => {
 };
 
 // what's going on down below?
-$(() => Dog.readJson());
+$(document).ready(function() {
+  Dog.readJson();
+});
+// $(() => Dog.readJson());
 // $(Dog.readJson);
