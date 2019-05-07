@@ -1,0 +1,21 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  float: left;
+  width: 50%;
+  text-align: center;
+}
+img {
+  height: 150px;
+}
+
+.hidden {
+  display: none;
+}
