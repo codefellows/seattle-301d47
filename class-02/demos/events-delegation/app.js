@@ -62,9 +62,9 @@ $('input[name=check]').on('change', function() {
 
 // select box filtering
 $('select[name="icecream"]').on('change', function() {
-  let $selection = $(this).val();
+  let selection = $(this).val();
   $('img').hide();
-  $(`img[data-flavor="${$selection}"]`).show();
+  $(`img[data-flavor="${selection}"]`).show();
 });
 
 // DOM-ready function
