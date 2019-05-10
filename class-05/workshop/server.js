@@ -1,6 +1,8 @@
 'use strict';
 
-require('dotenv').config();
+// Better way to handle environment variables coming soon
+// require('dotenv').config();
+
 const express = require('express');
 const app = express();
 
