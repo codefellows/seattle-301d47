@@ -1,0 +1,29 @@
+{
+  "name": "lab-07-repository-301d47",
+  "version": "1.0.0",
+  "description": "301d47 Lab 7 Repo - Adding PG",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JB-Tellez/lab-07-repository-301d47.git"
+  },
+  "author": "JB Tellez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JB-Tellez/lab-07-repository-301d47/issues"
+  },
+  "homepage": "https://github.com/JB-Tellez/lab-07-repository-301d47#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.16.4",
+    "nodemon": "^1.19.0",
+    "pg": "^7.11.0",
+    "superagent": "^5.0.5"
+  }
+}
