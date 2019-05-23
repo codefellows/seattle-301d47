@@ -26,7 +26,7 @@ client.on('error', err => console.error(err));
 app.set('view engine', 'ejs');
 
 // listen for requests
-app.listen(PORT, () => console.log(`Listening on port: PORT`));
+app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
 
 // API Routes
 
