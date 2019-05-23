@@ -19,8 +19,9 @@ app.use(express.urlencoded({extended: true}));
 // Specify a directory for static resources
 app.use(express.static('./public'));
 
-// This middleware allows posts to be converted to intended to desired HTTP method
-// E.g. allows deleting or updating from HTML form
+// This middleware allows a POST to be converted to intended to desired HTTP method
+// E.g. allows DElETE or PUT from HTML form 
+// https://github.com/expressjs/method-override
 app.use(methodOverride((request, response) => {
   if (request.body && typeof request.body === 'object' && '_method' in request.body) {
     // look in urlencoded POST bodies and delete it
