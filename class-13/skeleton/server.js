@@ -43,17 +43,45 @@ app.set('view engine', 'ejs');
 app.listen(PORT, () => console.log(`Listening on port: ${PORT}`));
 
 // API Routes
-app.get('/', replaceWithRealRequestHandler);
-app.post('/searches', replaceWithRealRequestHandler);
-app.get('/searches/new', replaceWithRealRequestHandler);
-app.post('/books', replaceWithRealRequestHandler);
-app.get('/books/:id', replaceWithRealRequestHandler);
-app.put('/books/:id', replaceWithRealRequestHandler);
-app.delete('/books/:id', replaceWithRealRequestHandler);
-app.get('*', replaceWithRealRequestHandler);
+app.get('/', getBooks);
+app.post('/searches', doSearch);
+app.get('/searches/new', newSearch);
+app.post('/books', createBook);
+app.get('/books/:id', getBook);
+app.put('/books/:id', updateBook);
+app.delete('/books/:id', deleteBook);
+app.get('*', (request, response) => response.status(404).send('This route does not exist'));
 
 
-// Helper functions
-function replaceWithRealRequestHandler(request, response) {
-  response.send('Needs to be replaced with real request handler per route');
+// Request Handlers
+function getBooks(request, response) {
+  response.send('getBooks');
 }
+
+function doSearch(request, response) {
+  response.send('doSearch');
+}
+
+function newSearch(request, response) {
+  response.send('newSearch');
+}
+
+function createBook(request, response) {
+  response.send('createBook');
+}
+
+function getBook(request, response) {
+  response.send('getBook');
+}
+
+function updateBook(request, response) {
+  response.send('updateBook');
+}
+
+function deleteBook(request, response) {
+  response.send('deleteBook');
+}
+
+// Helper Functions
+
+
